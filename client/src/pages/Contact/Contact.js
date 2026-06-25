@@ -4,7 +4,8 @@ import axios from "axios";
 import "./Contact.css";
 import Rotate from "react-reveal/Rotate";
 import LightSpeed from "react-reveal/LightSpeed";
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaX } from "react-icons/fa6";
 const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
@@ -61,9 +62,15 @@ const Contact = () => {
                     <div className="row">
                       <h6>
                         Contact With
-                        <BsLinkedin color="blue" size={30} className="ms-2" />
-                        <BsGithub color="black" size={30} className="ms-2" />
-                        <BsFacebook color="blue" size={30} className="ms-2" />
+                        <a href="https://www.linkedin.com/in/parikshitsahu/" target="_blank" rel="noopener noreferrer">
+                          <BsLinkedin color="blue" size={30} className="ms-2" />
+                        </a>
+                        <a href="https://github.com/Parikshit-1234" target="_blank" rel="noopener noreferrer">
+                          <BsGithub color="black" size={30} className="ms-2" />
+                        </a>
+                        <a href="https://x.com/ParikshitS24027" target="_blank" rel="noopener noreferrer">
+                          <FaX color="black" size={30} className="ms-2" />
+                        </a>
                       </h6>
                     </div>
 
